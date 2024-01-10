@@ -3,21 +3,21 @@ import Link from 'next/link';
 import AcademicInfo from './components/AcademicInfo';
 import PersonalInfo from './components/PersonalInfo';
 import { Accessibility, Info } from 'lucide-react';
-export default function Home() {
+export default function Page() {
   return (
     <main className=" min-h-screen">
       <div>
-        <div className="grid grid-cols-3  bg-black p-3 ">
+        <div className="grid grid-cols-3  bg-black p-3 rounded-md">
           <div className="">
             <div>
-              <Link href="/local.js">
+              <Link href="">
                 <img src="/bruno.png" alt="" className="w-[5rem]" />
               </Link>
             </div>
           </div>
           <div>
             <h1 className="text-center text-white font-bold font-mono text-4xl ">
-              Bruno Santos Teixeira
+              Bruno Santos Teixeira 
               <p className="text-xl p-2">Desenvolvedor Web Full Stack</p>
             </h1>
           </div>
@@ -29,19 +29,14 @@ export default function Home() {
         </div>
 
         <div>
-          <div className="bg-black/95  text-white">
+          <div className='bg-black/95 rounded-md text-white'>
             <div>
-              <h1 className="text-center font-mono text-2xl p-3">
-                Sobre Mim:{' '}
-              </h1>
+              <h1 className='text-center font-mono text-2xl'>Sobre Mim: </h1>
+              
             </div>
-            <div className="grid grid-cols-2">
-              <div className="">
-                <PersonalInfo />
-              </div>
-              <div>
-                <AcademicInfo />
-              </div>
+            <div className='grid grid-cols-2'>
+              <PersonalInfo/>
+
             </div>
           </div>
         </div>
